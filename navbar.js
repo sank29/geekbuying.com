@@ -35,7 +35,7 @@ navbarAllCategories.addEventListener("click", (event) => {
   //////////////////////////////////////////////////
 
   let p7 = document.createElement("p");
-  p7.innerText = "sports & Outdoors";
+  p7.innerText = "Sports & Outdoors";
 
   let p8 = document.createElement("p");
   p8.innerText = "Consumer Electronics";
@@ -144,5 +144,4 @@ navbarCategories.addEventListener("click", (event) => {
       newDivSecond.style.display = "none";
     }
   });
-  console.log(arrOfFlexTwo);
 });
