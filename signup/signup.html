@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="signup.css">
+   <link rel="stylesheet" href="signup.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 <body>
     <!-- Navbar -->
@@ -24,20 +26,51 @@
             </div>
             <div>
                 <form action="" id="form">
-                    <label class="signup_input">
-                        <input type="text" name="nickName" id="nickName" autocomplete="off" placeholder="Nick name" maxlength="20" class="error_color" aria-invalid="true">
-                    <em><label id="nickName-error" class="error_color" for="nickName" style="display: inline;">Please enter your name</label></em>
+                   
+                    <input class="input" type="text" name="nickName" id="nickName" autocomplete="off" placeholder="Nick name" maxlength="20" class="input" aria-invalid="true" >
+                    <input class="input" type="email" name="emailAddress" class="input" id="emailAddress" autocomplete="off" placeholder="Email address" maxlength="60" aria-invalid="true" >
+                    <input class="input" type="password" name="emailAddress" class="input" id="emailAddress" autocomplete="off" placeholder="Email address" maxlength="60" aria-invalid="true" >
 
-                    </label>
-                    
+                       
+                    <input class="input" type="password" name="password" autocomplete="off"  id="id_password" placeholder="Password">
+                    <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i>
+                       
+                    <!--captcha  -->
+                    <div id="Access">
+                        <div><input id="accessbar" placeholder="Access code" type="text"></div>
+                        <div class="captcha">
+                            <div class="preview"></div>
+                            <div><button class="captch-refresh">
+                                <i class="fa fa-refresh"></i></button></div>
 
-                </form>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div id="agree">
+                    <div>
+                    <input class="input" type="checkbox"  id="checkbox">
+                    </div>
+                    <div><p> &nbsp I agree to Geekbuying's&nbsp<a href="Terms of Use"><u>Terms of Use</u></a> &<a href="tems"><u> Privacy Policy.</u></a> </p></div>
+                    </div>
+                   <div>
+                    <input class="input" type="submit" value="Create account" id="submit">
+                   </div> 
+        
+  
             </div>
         </div>
-        
+       
     </div>
 
+
+
+
+    
 </body>
 </html>
-<script src="signup\signup.js"></script>
+<script src="signup.js"></script>
 

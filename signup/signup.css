@@ -34,24 +34,33 @@
 
 #formdiv{
     
-    width: 350px;
+    width: 400px;
     background-color: white;
     height: 380px;
     margin: auto;
     margin-top: 50px;
     border-radius: 3px;    
     box-shadow: 0 0 10px rgb(0 0 0 / 20%)
+    
 }
 
 #formdiv>div{
     margin: auto;
     display: flex;
     padding-top: 20px;
-    justify-content: space-between;
+ 
     font-weight: bold;
     line-height: 30px;
     -webkit-font-smoothing: antialiased;    
     width: 80%;
+    
+}
+#formdiv>div:first-child{
+    font-weight: bolder;
+    font-family: "Times New Roman", Times, serif;
+    justify-content: space-between;
+    padding-right: 20px;
+    font-size: 18px;
 }
 a{
     text-decoration: none;
@@ -59,30 +68,76 @@ a{
     font-weight:lighter;
     
 }
-.signup_input input.error_color {
-    color: #d04040;
-    border-color: #d04040;
+
+#agree{
+    display:flex;
+    width:100%;
+    font-size: 12px;
+    font-weight: lighter;
+    line-height: 30px;
+   align-items: center;
+   -webkit-font-smoothing: antialiased;
+    margin-bottom: 10px;
 }
-.signup_input input {
-    width: 100%;
-    height: 44px;
-    line-height: 44px;
-    text-indent: 14px;
-    border: 1px solid #d1d1d1;
-    border-radius: 4px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    display: inline-block;
+.input{
+    width: 300px;
+    height: 35px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    border-width: 1px;
+    padding: 10px;
+    -webkit-font-smoothing: antialiased;
 }
-.error_color {
-    color: #d04040;
-    font-style: normal;
-    font-size: 13px;
-    line-height: 24px;
-    text-align: left;
-    display: none;
-    font-family: "Open Sans",sans-serif !important;
+#checkbox{
+    width:15px;
+ margin-top: 18px;
+    height: 10px;
+
 }
-input:focus-visible {
-    outline-offset: 0px;
+#submit{
+    background-color: #0066ff;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    border:none;
+}
+/* access code */
+#Access{
+    display:grid;
+    grid-template-columns: 50px 50px;
+    gap: 10px;
+    
+}
+
+.preview{
+    color:#555;
+    width: 150px;
+    height:30px;
+    line-height: 10px;
+    letter-spacing: 8px;
+    border: 1px solid #888;
+    font-family: monospace;
+    
+}
+
+
+.captcha{
+ display: flex;
+ margin-left: 130px;
+ width: 100px;
+ height: 32px;
+    
+
+}
+#accessbar{
+    height: 32px;
+    width: 180px;
+    padding: 10px;
+}
+.preview+div>button{
+    height: 29px;
+    border: none;
+    width: 25px;
+    background-color: #555;
 }
