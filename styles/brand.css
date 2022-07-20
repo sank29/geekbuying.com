@@ -1,0 +1,44 @@
+/* A to Z Sorting Part */
+#sorting_header{
+    box-sizing: border-box;
+    margin: 250px 0px 0px 100px;
+    width: 90%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+#sorting_header>div:hover{
+cursor: pointer;
+font-weight: bold;
+text-decoration: underline;
+}
+#hot{
+    text-decoration: underline;
+}
+#sorting_result{
+    display: grid;
+    width: 90%;
+    margin: auto;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: auto;
+    align-items: center;
+    gap: 10px;
+}
+#sorting_result>img{
+    border: 1px solid gray;
+    height: 80px;
+    width: 160px;
+}
+#sorting_result>div:hover{
+    cursor: pointer;
+}
+#sorting_result>div{
+    border: 1px solid gray;
+    height: 80px;
+    width: 160px;
+}
+#sorting_result>div>img{
+    height: 100%;
+    width: 100%;
+}
