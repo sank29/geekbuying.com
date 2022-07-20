@@ -3,7 +3,7 @@ body{
     margin: 0px;
 }
 #navbar{
-    border: 1px solid red;
+    border: 1px solid transparent;
     background-color: #1c7dfd
 }
 #navbarTopSection{
@@ -18,7 +18,7 @@ body{
 }
 
 #navbarSubMain{
-    border: 1px solid red;
+    border: 1px solid transparent;
     width: 80%;
     margin: auto;
 }
@@ -32,7 +32,7 @@ body{
 }
 
 #navbarMidlePart{
-    border: 1px solid red;
+    border: 1px solid transparent;
     display: flex;
     align-items: center;
     margin-top: 20px;
@@ -73,7 +73,7 @@ body{
 #navbarShip{
     display: flex;
     align-items: center;
-    border: 1px solid red;
+    border: 1px solid transparent;
     height: 20px;
     margin-left: 45px;
 }
@@ -81,7 +81,7 @@ body{
 #navbarFlag{
     height: 20px;
     width: 30px;
-    border: 1px solid red
+    border: 1px solid transparent;
 }
 
 #navbarSignIn{
