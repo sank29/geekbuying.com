@@ -194,3 +194,28 @@
     font-size: 16px !important;
     font-weight: bold;
 }
+
+
+#footerDropDown{
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+#footerDropDown>div{
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15%;
+    text-align: center;
+}
+
+#footerDropDown>div>img{
+    width: 40px;
+    height: 40px;
+}
+
+#footerDropDown>div>p:last-child{
+    margin-top: -10px;
+}
