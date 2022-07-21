@@ -1,0 +1,3 @@
+function logingmail(){
+    window.location.href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&state=%2Fprofile&redirect_uri=https%3A%2F%2Fwww.geekbuying.com%2FMain%2FSignIn&response_type=token&client_id=472714482096-o15au3vh80f5hontiepjt6jb2psi5enk.apps.googleusercontent.com&flowName=GeneralOAuthFlow"
+}
