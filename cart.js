@@ -81,7 +81,6 @@ const displayCartData = (data) => {
 displayCartData(data);
 
 let quntitySpan = document.querySelectorAll(".quntitySpan");
-
 let minusSpan = document.querySelectorAll(".minusSpan");
 let priceSpan = document.querySelectorAll(".price");
 let totalPriceSpan = document.querySelectorAll(".totalPrice");
@@ -96,6 +95,7 @@ const minusSpanFunctionality = (minusSpan) => {
         totalPriceSpan[index].innerText = multiple * unitPrice;
         subtotalPriceFun(totalPriceSpan);
         displayCartBottomPartDiv(cartBottomPartDiv);
+        setData[index].quntity = +quntitySpan[index].innerText;
       }
     });
   });
@@ -150,7 +150,7 @@ let displayCartBottomPartDiv = (cartBottomPartDiv) => {
 
   let totalPrice = document.createElement("div");
   let totalPriceTag = document.createElement("p");
-  totalPriceTag.innerText = `Total: ${totalPrices}`;
+  totalPriceTag.innerText = `Total: ${totalPrices.toFixed(2)}`;
   totalPrice.append(totalPriceTag);
 
   let payPalDiv = document.createElement("div");
@@ -175,3 +175,18 @@ let displayCartBottomPartDiv = (cartBottomPartDiv) => {
   cartBottomPartDiv.append(allLastDiv);
 };
 displayCartBottomPartDiv(cartBottomPartDiv);
+
+///////////////////checkoutButtom
+
+// let checkoutButtom = document.querySelector("#checkoutButtom");
+
+// let setData = JSON.parse(localStorage.getItem("cartData")) || [];
+
+// checkoutButtom.addEventListener("click", (event) => {
+//   console.log("click");
+//   setData.forEach((data, index) => {
+//     console.log(quntitySpan[index].innerText);
+//     data.quantity = quntitySpan[index].innerText;
+//     localStorage.setItem("cartData", JSON.stringify(setData));
+//   });
+// });
