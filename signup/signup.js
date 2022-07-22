@@ -21,7 +21,7 @@ function genratecaptcha(){
 }
 function setcaptcha(){
   let html=  captchaValue.split(" ").map((char)=>{
-        const rotate=20+math.trunc(Math.random()*30);
+        const rotate=20+Math.trunc(Math.random()*30);
         const font =Math.trunc(Math.random()*fonts.length);
         return `<span>
         style="
@@ -43,3 +43,34 @@ function initcaptcha(){
 }
  initcaptcha()
 })();
+
+
+
+
+let form=document.querySelector("form")
+userdata=JSON.parse(localStorage.getItem("userdata"))||[]
+form.addEventListener("submit",function(event){
+    event.preventDefault()
+    let data={
+        name:  form.username.value,
+        email:form.useremail.value,
+        pass: form.userpass.value,
+    }
+    if(checkemail(data.email)==true){
+        userdata.push(data);
+        localStorage.setItem("userdata",JSON.stringify(userdata))
+        alert("register sucessfull")
+    }else{
+        alert("Account already exist")
+    }
+})
+    function checkemail(email){
+        let filtered=userdata.filter(function(el){
+            return email==el.email
+        })
+        if(filtered.length>0){
+            return false;
+        }else{
+            return true;      
+        }
+    }
