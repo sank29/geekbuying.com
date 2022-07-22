@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./payment.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="payment">
+      <h2 id="paymentHeading">Shipping Address</h2>
+      <p>
+        To ensure delivery and prevent delays, please enter the valid alphabetic
+        character.
+      </p>
+      <div id="addressForm">
+        <form id="paymentAddressForm" action="">
+          <label for="firstName">*First Name</label>
+          <input type="text" id="firstName" />
+
+          <label for="lastName">*Last Name</label>
+          <input type="text" id="lastName" />
+
+          <label for="country">*Country/Region:</label>
+          <select name="" id="country">
+            <option value="In">India</option>
+            <option value="In">US</option>
+            <option value="In">UK</option>
+            <option value="In">Canada</option>
+            <option value="In">Pakistan</option>
+            <option value="In">Nepal</option>
+          </select>
+          <label for="state">*State/Province/County:</label>
+          <input type="text" id="state" />
+
+          <label for="city">*City:</label>
+          <input placeholder="Your city" type="text" id="city" />
+
+          <label for="zipCode">*Zip/Postal code: </label>
+          <input placeholder="Your ZIP/postal code" type="text" id="zipCode" />
+
+          <label for="addressOne">*Address line1:</label>
+          <input
+            placeholder="Street address, company name,P.O box, c/o, etc"
+            type="text"
+            id="addressOne"
+          />
+
+          <label for="addressTwo">Address line2:</label>
+          <input
+            type="text"
+            id="addressTwo"
+            placeholder="Apartment, suite, unit, building, floor, etc (Optional)"
+          />
+
+          <label for="mobileNuber">*Phone number:</label>
+          <input type="number" placeholder="Your phone number" />
+          <div id="paymentButtonDiv">
+            <button id="addressSubmitButton">Save</button>
+            <button id="addressCancelButton">Cancel</button>
+          </div>
+        </form>
+      </div>
+      <h2>Product List</h2>
+      <div id="appendDataInPaymet">
+        <table style="width: 100%; border: 1px solid black">
+          <thead
+            style="background-color: #f1f1f1; padding: 20px; line-height: 45px"
+          ></thead>
+          <tbody style="border: 1px solid black" id="paymentbody"></tbody>
+        </table>
+      </div>
+      <div id="paymentBottomPart"></div>
+    </div>
+  </body>
+</html>
+
+<script src="./payment.js"></script>
