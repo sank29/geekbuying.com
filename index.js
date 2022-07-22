@@ -270,7 +270,7 @@ function displaydata(data) {
     let before = document.createElement("p");
     original.innerText = "₹" + el.original;
     before.innerText = el.before;
-
+        
     before.setAttribute("class", "sbefore");
 
     let dis = document.createElement("h5");
