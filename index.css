@@ -2,10 +2,10 @@
   box-sizing: border-box;
 }
 
-* {
-  margin-left: 10px;
-  margin-right: 10px;
-}
+/* * {
+  margin-left: 5px;
+  margin-right: 5px;
+} */
 
 /* Slideshow container */
 .slideshow-container {
@@ -22,21 +22,6 @@
 
 /* Next & previous buttons */
 
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: 30px;
-  margin-top: -22px;
-  padding: 16px;
-  color: rgb(33, 30, 30);
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  left: -20px;
-}
 .prev {
   cursor: pointer;
   position: absolute;
@@ -52,6 +37,22 @@
   user-select: none;
   left: -597px;
 }
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgb(33, 30, 30);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  left: -20px;
+}
+
 /* Position the "next button" to the right */
 .next {
   right: 0;
@@ -230,6 +231,7 @@ h3 {
   border: 0ch;
   height: 40px;
   margin-top: 160px;
+  /*checked*/
   left: 95%;
 }
 
@@ -237,6 +239,7 @@ h3 {
   position: absolute;
   left: 370px;
   margin-top: 160px;
+  /* checked */
   border: 0ch;
   width: 30px;
   height: 40px;
@@ -409,7 +412,8 @@ h3 {
   background-color: none;
   position: absolute;
   right: 10px;
-  bottom: -1850px;
+  bottom: -1700px;
+  /*checked*/
   /*////////////// adjust in end  //////////*/
   width: 50px;
   height: 50px;
@@ -418,7 +422,8 @@ h3 {
 }
 .pre2 {
   position: absolute;
-  bottom: -1850px;
+  bottom: -1700px;
+  /*checked*/
   /*////////////// adjust in end  //////////*/
   background-color: none;
   width: 50px;
@@ -513,16 +518,6 @@ h3 {
 #Showdata3::-webkit-scrollbar {
   display: none;
 }
-.fwd3 {
-  background-color: none;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: none;
-  position: absolute;
-  right: 45px;
-  top: 4200px;
-}
 .pre3 {
   background-color: none;
   width: 50px;
@@ -531,8 +526,19 @@ h3 {
   border: none;
   position: absolute;
   left: 45px;
-  top: 4200px;
+  top: 4165px;
 }
+.fwd3 {
+  background-color: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  position: absolute;
+  right: 45px;
+  top: 4165px;
+}
+
 .mySlides {
   position: absolute;
   height: 600px;
