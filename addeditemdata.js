@@ -1,5 +1,14 @@
-let itemadded=JSON.parse(localStorage.getItem("addeddata"))||[]
+import navbarFunction from "./navbar.js"
+
+import footer from "./footer.js"
+document.getElementById("footer").innerHTML=footer()
+
+document.getElementById("navbar").innerHTML=navbarFunction()
+
+let itemadded=JSON.parse(localStorage.getItem("item"))||[]
 console.log(itemadded)
+
+let cart=[]
 
 function display(itemadded){
     let product=document.getElementById("items")
@@ -227,9 +236,26 @@ let addtocart=document.createElement("button")
 addtocart.setAttribute("class","addtocart")
 addtocart.innerText="Add to Cart"
 
+addtocart.addEventListener("click",function(){
+   cart.push(el)
+   localStorage.setItem("cart-item",JSON.stringify(cart))
+   window.location.href="./cart.html"
+})
+
+
+
+
+
 let buynow=document.createElement("button")
 buynow.setAttribute("class","buynow")
 buynow.innerText="Buy Now"
+buynow.addEventListener("click",function(){
+   cart.push(el)
+   localStorage.setItem("cart-item",JSON.stringify(cart))
+   window.location.href="./cart.html"
+})
+
+
 
 let wishlist=document.createElement("div")
 wishlist.setAttribute("class","wishlist")
@@ -293,3 +319,5 @@ div.append(innerdiv1,innerdiv2)
 }
 
 display(itemadded)
+
+

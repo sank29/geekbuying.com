@@ -184,6 +184,7 @@ let data3 = [
       "https://img.gkbcdn.com/p/2022-05-25/Hawkeye-Firefly-X-4K-60fps-170-Degree-Wide-Angle-501280-0._w280_p1_.jpg",
     original: 18738,
     before: 18538,
+    offer: "30% off",
     detail: "Hawkeve firefly X?$K 170degree Wide angle wifi gryo camera",
   },
   {
@@ -191,6 +192,7 @@ let data3 = [
       "https://img.gkbcdn.com/p/2022-06-07/MIYOO-Mini-32GB-3000-Games-Retro-Handheld-Game-Console-Blue-501578-0._w280_p1_.jpg",
     original: 2220.12,
     before: 2229,
+    offer: "20% off",
     detail: "Miyyo mini 32gb storing device ",
   },
   {
@@ -198,6 +200,7 @@ let data3 = [
       "https://img.gkbcdn.com/p/2022-06-08/GREEN-TIME-T2-Alarm-Clock-Radio-White-501646-0._w280_p1_.jpg",
     original: 24151.23,
     before: 24123,
+    offer: "10% off",
     detail: "green Time green dual usb Alarm clock wireless radio",
   },
   {
@@ -205,6 +208,7 @@ let data3 = [
       "https://img.gkbcdn.com/p/2022-05-25/Hawkeye-Firefly-X-4K-60fps-170-Degree-Wide-Angle-501280-0._w280_p1_.jpg",
     original: 12000.1,
     before: 12010,
+    offer: "15% off",
     detail: "Mini wireless camera real Nanny tiny camera ",
   },
   {
@@ -212,6 +216,7 @@ let data3 = [
       "https://img.gkbcdn.com/p/2022-05-17/Mini-Camera-Full-HD-1080P-Camcorder-500596-0._w280_p1_.jpg",
     original: 18538,
     before: 18588,
+    offer: "30% off",
     detail: "Hawkeve firefly X?$K 170degree Wide angle wifi gryo camera",
   },
   {
@@ -219,6 +224,7 @@ let data3 = [
       "https://img.gkbcdn.com/p/2022-05-09/ANBERNIC-RG503-Portable-Game-Console-16-64GB-Black-500314-0._w280_p1_.jpg",
     original: 18038,
     before: 18538,
+    offer: "30% off",
     detail: "Hawkeve firefly X?$K 170degree Wide angle wifi gryo camera",
   },
   {
@@ -226,6 +232,7 @@ let data3 = [
       "https://img.gkbcdn.com/p/2022-04-07/909cca47ceb64f20b40bf8c04f5b78de-499246-0._w280_p1_.jpg",
     original: 15203,
     before: 18538,
+    offer: "20% off",
     detail: "Hawkeve firefly X?$K 170degree Wide angle wifi gryo camera",
   },
   {
@@ -233,6 +240,7 @@ let data3 = [
       "https://img.gkbcdn.com/p/2022-05-25/Haylou-RS3-LS04-Smartwatch-1-2-Inch-AMOLED-HD-Display-501268-0._w280_p1_.jpg",
     original: 18038,
     before: 18538,
+    offer: "10% off",
     detail: "Hawkeve firefly X?$K 170degree Wide angle wifi gryo camera",
   },
   {
@@ -240,6 +248,7 @@ let data3 = [
       "https://img.gkbcdn.com/p/2022-05-17/Mini-Camera-Full-HD-1080P-Camcorder-500596-0._w280_p1_.jpg",
     original: 18138,
     before: 18538,
+    offer: "20% off",
     detail: "Hawkeve firefly X?$K 170degree Wide angle wifi gryo camera",
   },
   {
@@ -247,6 +256,7 @@ let data3 = [
       "https://img.gkbcdn.com/p/2022-05-25/Hawkeye-4K-Split-V4-Recording-Low-latency-FPV-Camera-with-Gyroflow-501277-0._w280_p1_.jpg",
     original: 18538,
     before: 18589,
+    offer: "30% off",
     detail: "Hawkeve firefly X?$K 170degree Wide angle wifi gryo camera",
   },
   {
@@ -254,14 +264,26 @@ let data3 = [
       "https://img.gkbcdn.com/p/2022-05-30/3-5-Inch-IPS-TYPE-C-Secondary-Screen-CPU-GPU-RAM-HDD-Monitoring-501430-0._w280_p1_.jpg",
     original: 1852,
     before: 1898,
+    offer: "50% off",
     detail: "Hawkeve firefly X?$K 170degree Wide angle wifi gryo camera",
   },
 ];
+let items=[]
+///////////////////////
+let storeItem = (el) => {
+  items.push(el)
+  localStorage.setItem("item", JSON.stringify(items));
+  window.location.href = "./addeditemdata.html";
+  /// change the href line263 accoing to your page
+};
 
 function displaydata(data) {
   data.forEach(function (el) {
     let div3 = document.createElement("div");
-    
+    div3.addEventListener("click", function () {
+      storeItem(el);
+    });
+
     let image = document.createElement("img");
     image.src = el.image;
     image.setAttribute("class", "simage");
@@ -270,7 +292,7 @@ function displaydata(data) {
     let before = document.createElement("p");
     original.innerText = "₹" + el.original;
     before.innerText = el.before;
-        
+
     before.setAttribute("class", "sbefore");
 
     let dis = document.createElement("h5");
@@ -474,7 +496,7 @@ let data4 = [
     image:
       "https://img.gkbcdn.com/p/2021-03-30/xiaomi-mi-band-6-smart-bracelet-1-56-inch-screen-black-1617074128547._w280_p1_.jpg",
     off: 30 + "%off",
-    detail: "Mifo O7 Bluetooth 5.0 Qualcomm QCC3020 TWS Earphones Carbon",
+    detail: "Mifo O7 Bluetooth 5.0 Qualcomm QCC3020 TWS Earphongites Carbon",
     star: "🌟🌟🌟🌟🌟",
     original: 1025.53,
     before: 2025.5,
