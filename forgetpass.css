@@ -114,45 +114,7 @@ a{
     border:none;
     margin-top:20px;
 }
-/* access code */
-#Access{
-    display:grid;
-    grid-template-columns: 50px 50px;
-    gap: 10px;
-    
-}
 
-.preview{
-    color:#555;
-    width: 150px;
-    height:30px;
-    line-height: 10px;
-    letter-spacing: 8px;
-    border: 1px solid #888;
-    font-family: monospace;
-    
-}
-
-
-.captcha{
- display: flex;
- margin-left: 130px;
- width: 100px;
- height: 32px;
-    
-
-}
-#accessbar{
-    height: 32px;
-    width: 180px;
-    padding: 10px;
-}
-.preview+div>button{
-    height: 29px;
-    border: none;
-    width: 25px;
-    background-color: #555;
-}
 label{
     display: block;
     font-size: 14px;
