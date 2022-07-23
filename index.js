@@ -261,7 +261,7 @@ let data3 = [
 function displaydata(data) {
   data.forEach(function (el) {
     let div3 = document.createElement("div");
-
+    
     let image = document.createElement("img");
     image.src = el.image;
     image.setAttribute("class", "simage");
