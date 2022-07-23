@@ -1,20 +1,23 @@
 let cartTbody = document.querySelector("#cartTbody");
 let table = document.querySelector("table");
 let cartBottomPartDiv = document.querySelector("#cartBottomPart");
-let data = [
-  {
-    image:
-      "https://img.gkbcdn.com/p/2019-07-12/haylou-gt1-tws-earphones-bluetooth-5-0-black-1571987624380._w280_p1_.jpg",
-    detail: "Mifo O7 Bluetooth 5.0 Qualcomm QCC3020 TWS Earphones Carbon",
-    original: 2034.53,
-  },
-  {
-    image:
-      "https://img.gkbcdn.com/p/2021-07-06/2-4g-controller-gamepad-1625560641219._w280_p1_.jpg",
-    detail: "Mifo O7 Bluetooth 5.0 Qualcomm QCC3020 TWS Earphones Carbon",
-    original: 1012.53,
-  },
-];
+let data = JSON.parse(localStorage.getItem("cart-item"));
+
+// let data = [
+//   {
+//     image:
+//       "https://img.gkbcdn.com/p/2019-07-12/haylou-gt1-tws-earphones-bluetooth-5-0-black-1571987624380._w280_p1_.jpg",
+//     detail: "Mifo O7 Bluetooth 5.0 Qualcomm QCC3020 TWS Earphones Carbon",
+//     original: 2034.53,
+//   },
+//   {
+//     image:
+//       "https://img.gkbcdn.com/p/2021-07-06/2-4g-controller-gamepad-1625560641219._w280_p1_.jpg",
+//     detail: "Mifo O7 Bluetooth 5.0 Qualcomm QCC3020 TWS Earphones Carbon",
+//     original: 1012.53,
+//   },
+// ];
+
 let totalPrice = 0;
 
 const displayCartData = (data) => {
