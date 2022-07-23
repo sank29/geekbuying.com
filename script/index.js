@@ -269,13 +269,12 @@ let data3 = [
   },
 ];
 
-let items=[]
+let items = [];
 ///////////////////////
 let storeItem = (el) => {
-  items.push(el)
+  items.push(el);
   localStorage.setItem("item", JSON.stringify(items));
   window.location.href = "./addeditemdata.html";
-
 
   /// change the href line263 accoing to your page
 };
@@ -1031,7 +1030,17 @@ navbarCategories.addEventListener("click", (event) => {
     }
   });
 });
+////////////////////////////////////////////////////////navbar all links
 
+let navbarCart = document.querySelector("#navbarCart");
+navbarCart.addEventListener("click", (event) => {
+  window.location.href = "./cart.html";
+});
+
+let navbarSignIn = document.querySelector("#navbarSignIn");
+navbarSignIn.addEventListener("click", (event) => {
+  window.location.href = "./signup.html";
+});
 /////////////////////////////footer//////////////////////////////////
 
 let footerDiv = document.querySelector("#footer");

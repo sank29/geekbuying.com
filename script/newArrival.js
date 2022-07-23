@@ -370,6 +370,11 @@ navbarCategories.addEventListener("click", (event) => {
   });
 });
 
+let navbarCart = document.querySelector("#navbarCart");
+navbarCart.addEventListener("click", (event) => {
+  window.location.href = "./cart.html";
+});
+
 //////////////////////////////////////footer
 let footer = document.querySelector("#footer");
 

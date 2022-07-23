@@ -52,6 +52,10 @@ body {
   cursor: pointer;
 }
 
+#allCategoriesDropDown{
+  z-index: 1;
+}
+
 #navbarInput > input {
   height: 36px;
   width: 500px;
@@ -71,7 +75,9 @@ body {
   border-bottom-right-radius: 5px;
   border-top-right-radius: 5px;
 }
-
+#navbarCategories>div{
+  z-index: 1;
+}
 #navbarShip {
   display: flex;
   align-items: center;
@@ -104,6 +110,7 @@ body {
 
 #navbarCart {
   margin-left: 50px;
+  cursor: pointer;
 }
 
 #navbarShip p {
