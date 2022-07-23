@@ -61,7 +61,7 @@ function displayData(productData) {
 
     //icon and free shipping
     let span = document.createElement("span");
-    span.innerHTML = "<i class='fa-regular fa-heart'></i>";
+    span.innerHTML = <FontAwesomeIcon icon="fa-thin fa-heart" />;
     span.setAttribute("id", "icon");
 
     let freeship = document.createElement("p");
