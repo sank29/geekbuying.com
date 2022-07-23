@@ -494,7 +494,7 @@ let data4 = [
     image:
       "https://img.gkbcdn.com/p/2021-03-30/xiaomi-mi-band-6-smart-bracelet-1-56-inch-screen-black-1617074128547._w280_p1_.jpg",
     off: 30 + "%off",
-    detail: "Mifo O7 Bluetooth 5.0 Qualcomm QCC3020 TWS Earphones Carbon",
+    detail: "Mifo O7 Bluetooth 5.0 Qualcomm QCC3020 TWS Earphongites Carbon",
     star: "🌟🌟🌟🌟🌟",
     original: 1025.53,
     before: 2025.5,
