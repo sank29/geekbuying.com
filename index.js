@@ -257,10 +257,19 @@ let data3 = [
     detail: "Hawkeve firefly X?$K 170degree Wide angle wifi gryo camera",
   },
 ];
+///////////////////////
+let storeItem = (el) => {
+  localStorage.setItem("item", JSON.stringify(el));
+  window.location.href = "login.html";
+  /// change the href line263 accoing to your page
+};
 
 function displaydata(data) {
   data.forEach(function (el) {
     let div3 = document.createElement("div");
+    div3.addEventListener("click", function () {
+      storeItem(el);
+    });
 
     let image = document.createElement("img");
     image.src = el.image;
@@ -270,7 +279,7 @@ function displaydata(data) {
     let before = document.createElement("p");
     original.innerText = "₹" + el.original;
     before.innerText = el.before;
-        
+
     before.setAttribute("class", "sbefore");
 
     let dis = document.createElement("h5");
