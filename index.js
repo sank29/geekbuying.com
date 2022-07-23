@@ -268,12 +268,15 @@ let data3 = [
     detail: "Hawkeve firefly X?$K 170degree Wide angle wifi gryo camera",
   },
 ];
+
 let items=[]
 ///////////////////////
 let storeItem = (el) => {
   items.push(el)
   localStorage.setItem("item", JSON.stringify(items));
   window.location.href = "./addeditemdata.html";
+
+
   /// change the href line263 accoing to your page
 };
 
