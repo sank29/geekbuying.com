@@ -2,6 +2,7 @@
     border: 1px solid transparent;
     width: 80%;
     margin: auto;
+    margin-top: 50px;
 }
 
 #cartHeading{
@@ -71,6 +72,7 @@
 
 #cartBottomPart{
     border: 1px solid transparent;
+    margin-bottom: 50px;
 }
 
 #cartBottomPart>div{
