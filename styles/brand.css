@@ -7,6 +7,7 @@
     display: flex;
     align-items: center;
     gap: 30px;
+
 }
 #sorting_header>div:hover{
 cursor: pointer;
