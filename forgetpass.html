@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="forgetpass.css">
+    <link rel="stylesheet" href="./style/forgetpass.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
@@ -29,22 +29,7 @@
                     <label for="">Email Address</label>
                      <input class="input" type="email" name="emailAddress" class="input" id="emailAddress" autocomplete="off" placeholder="Email address" maxlength="60" aria-invalid="true" >
 
-                        
-                     <!--captcha  -->
-                     <label for="">Access Code</label>
-                     <div id="Access">
-                        
-                         <div><input id="accessbar" placeholder="Access code" type="text"></div>
-                         <div class="captcha">
-                             <div class="preview"></div>
-                             <div><button class="captch-refresh">
-                                 <i class="fa fa-refresh"></i></button></div>
- 
-                         </div>
-                     </div>
- 
- 
-                     <input class="input" type="submit" value="Create account" id="submit">
+                     <input onsubmit="submit(event)" class="input" type="submit" value="Create account" id="submit">
                     </div> 
          
    
@@ -59,4 +44,4 @@
     
 </body>
 </html>
-<script src="tropical-drawer-5456\forgetpass.js"></script>
+<script src="./script/forgetpass.js"></script>

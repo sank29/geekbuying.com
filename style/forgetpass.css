@@ -3,6 +3,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+
 }
 
 /* Navbar */
@@ -43,6 +44,16 @@
     box-shadow: 0 0 10px rgb(0 0 0 / 20%)
     
 }
+#formdiv>p{
+    color: #333;
+    font-size: 18px;
+    display: inline-block;
+
+    line-height: 30px;
+    padding-bottom: 20px;
+    text-align: left;
+}
+
 
 #formdiv>div{
     margin: auto;
@@ -77,12 +88,12 @@ a{
     line-height: 30px;
    align-items: center;
    -webkit-font-smoothing: antialiased;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 .input{
     width: 300px;
     height: 35px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     border-radius: 3px;
     border-width: 1px;
     padding: 10px;
@@ -101,43 +112,12 @@ a{
     font-weight: bold;
     border-radius: 5px;
     border:none;
-}
-/* access code */
-#Access{
-    display:grid;
-    grid-template-columns: 50px 50px;
-    gap: 10px;
-    
+    margin-top:20px;
 }
 
-.preview{
-    color:#555;
-    width: 150px;
-    height:30px;
-    line-height: 10px;
-    letter-spacing: 8px;
-    border: 1px solid #888;
-    font-family: monospace;
-    
-}
-
-
-.captcha{
- display: flex;
- margin-left: 130px;
- width: 100px;
- height: 32px;
-    
-
-}
-#accessbar{
-    height: 32px;
-    width: 180px;
-    padding: 10px;
-}
-.preview+div>button{
-    height: 29px;
-    border: none;
-    width: 25px;
-    background-color: #555;
+label{
+    display: block;
+    font-size: 14px;
+    color: #666;
+    line-height: 40px;
 }
