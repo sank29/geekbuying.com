@@ -1,5 +1,5 @@
-import navbarFun from '../../navbar.js'
-import footerFun from '../../footer.js'
+import navbarFun from "./navbar.js";
+import footerFun from "./footer.js";
 let productData = JSON.parse(localStorage.getItem("newArrival"));
 
 displayData(productData);
@@ -214,14 +214,13 @@ function detailProductFun(index) {
 //   displayData(filterData);
 // }
 
-
 //////////////////////////////navbar
 
-let navbar = document.querySelector('#navbar')
-navbar.innerHTML = navbarFun()
+let navbar = document.querySelector("#navbar");
+navbar.innerHTML = navbarFun();
 
-let navbarFlag = document.querySelector('#navbarFlag')
-navbarFlag.src = '../img/flag.png'
+let navbarFlag = document.querySelector("#navbarFlag");
+navbarFlag.src = "../img/flag.png";
 
 const navbarAllCategories = document.querySelector("#navbarAllCategories");
 const navbarMidlePart = document.querySelector("#navbarMidlePart");
@@ -371,24 +370,10 @@ navbarCategories.addEventListener("click", (event) => {
   });
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
 //////////////////////////////////////footer
-let footer = document.querySelector('#footer')
+let footer = document.querySelector("#footer");
 
-footer.innerHTML = footerFun()
-
-
+footer.innerHTML = footerFun();
 
 let footerFirstPartDiv = document.querySelector("#footerFirstPart");
 let newDivFooter = document.createElement("div");
