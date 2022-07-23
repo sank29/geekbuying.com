@@ -1,7 +1,9 @@
 #payment{
     width: 90%;
     margin: auto;
-    border: 1px solid red;
+    border: 1px solid transparent;
+    margin-bottom: 50px;
+    padding-left: 60px;
 }
 
 
@@ -154,4 +156,17 @@ input{
     border-radius: 4px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+}
+#placeOrderPaymentButton{
+    display: flex;
+    justify-content: end;
+}
+#placeOrderPaymentButton>button{
+    background-color: #0066ff;
+    color: white;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
 }

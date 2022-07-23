@@ -201,6 +201,7 @@ cartOneItemDeleteButton.forEach((deleteButton, index) => {
 let checkoutButtom = document.querySelector("#checkoutButtom");
 checkoutButtom.addEventListener("click", (event) => {
   window.location.href = "./payment.html";
+  console.log("hiii");
 });
 
 let deleteAll = document.querySelector("#deleteAll");
