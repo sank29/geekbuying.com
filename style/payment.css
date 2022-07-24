@@ -115,9 +115,8 @@
     justify-content: start;
     text-align:justify;
 }
-input{
+#payment input{
     margin: auto;
-    
     width: 30%;
     margin-bottom: 30px;
     height: 25px;
@@ -151,6 +150,7 @@ input{
     box-sizing: border-box;
     color: #fff;
 }
+
 #paymentButtonDiv>button:last-child{
     border: 1px solid black;
     border-radius: 4px;
