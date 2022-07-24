@@ -211,10 +211,11 @@ deleteAll.addEventListener("click", (event) => {
   window.location.reload();
 });
 
-////////////////////////navbar
+//////////////////////nabar
 
-const navbar = document.querySelector("#navbar");
-navbar.innerHTML = navbarFun();
+let navbarDiv = document.querySelector("#navbar");
+
+navbarDiv.innerHTML = navbarFun();
 
 const navbarAllCategories = document.querySelector("#navbarAllCategories");
 const navbarMidlePart = document.querySelector("#navbarMidlePart");
@@ -234,41 +235,89 @@ navbarAllCategories.addEventListener("click", (event) => {
 
   let p1 = document.createElement("p");
   p1.innerText = "All Categories";
+  p1.style.cursor = "pointer";
+  p1.addEventListener("click", (event) => {
+    window.location.href = "./new.html";
+  });
 
   let p2 = document.createElement("p");
   p2.innerText = "Smart Home & Garden";
+  p2.style.cursor = "pointer";
+  p2.addEventListener("click", (event) => {
+    window.location.href = "./new.html";
+  });
 
   let p3 = document.createElement("p");
   p3.innerText = "Phones & Accessories";
+  p3.style.cursor = "pointer";
+  p3.addEventListener("click", (event) => {
+    window.location.href = "./new.html";
+  });
 
   let p4 = document.createElement("p");
   p4.innerText = "Computers, Tables & Accessories";
+  p4.style.cursor = "pointer";
+  p4.addEventListener("click", (event) => {
+    window.location.href = "./new.html";
+  });
 
   let p5 = document.createElement("p");
   p5.innerText = "Wearable Devices";
+  p5.style.cursor = "pointer";
+  p5.addEventListener("click", (event) => {
+    window.location.href = "./new.html";
+  });
 
   let p6 = document.createElement("p");
   p6.innerText = "Automobiles & Motorcycles";
+  p6.style.cursor = "pointer";
+  p6.addEventListener("click", (event) => {
+    window.location.href = "./new.html";
+  });
 
   //////////////////////////////////////////////////
 
   let p7 = document.createElement("p");
   p7.innerText = "Sports & Outdoors";
+  p7.style.cursor = "pointer";
+  p7.addEventListener("click", (event) => {
+    window.location.href = "./new.html";
+  });
 
   let p8 = document.createElement("p");
   p8.innerText = "Consumer Electronics";
+  p8.style.cursor = "pointer";
+  p8.addEventListener("click", (event) => {
+    window.location.href = "./new.html";
+  });
 
   let p9 = document.createElement("p");
   p9.innerText = "TV Boxes & mini PCs";
+  p9.style.cursor = "pointer";
+  p9.addEventListener("click", (event) => {
+    window.location.href = "./new.html";
+  });
 
   let p10 = document.createElement("p");
   p10.innerText = "Toys & Hobbies";
+  p10.style.cursor = "pointer";
+  p10.addEventListener("click", (event) => {
+    window.location.href = "./new.html";
+  });
 
   let p11 = document.createElement("p");
   p11.innerText = "Security System";
+  p11.style.cursor = "pointer";
+  p11.addEventListener("click", (event) => {
+    window.location.href = "./new.html";
+  });
 
   let p12 = document.createElement("p");
   p12.innerText = "Fashion";
+  p12.style.cursor = "pointer";
+  p12.addEventListener("click", (event) => {
+    window.location.href = "./new.html";
+  });
 
   firstSubDiv.append(p1, p2, p3, p4, p5, p6);
   secondSubDiv.append(p7, p8, p9, p10, p11, p12);
@@ -314,39 +363,88 @@ navbarCategories.addEventListener("click", (event) => {
 
   let p1 = document.createElement("p");
   p1.innerText = "Local Warehouses";
+  p1.style.cursor = "pointer";
+  p1.addEventListener("click", (event) => {
+    window.location.href = "./new.html";
+  });
 
   let p2 = document.createElement("p");
   p2.innerText = "Sports & Outdoors";
+  p2.style.cursor = "pointer";
+  p2.addEventListener("click", (event) => {
+    window.location.href = "./new.html";
+  });
 
   let p3 = document.createElement("p");
   p3.innerText = "Smart Homes & Garden";
+  p3.style.cursor = "pointer";
+  p3.addEventListener("click", (event) => {
+    window.location.href = "./new.html";
+  });
 
   let p4 = document.createElement("p");
   p4.innerText = "Consumer Electronics";
+  p4.style.cursor = "pointer";
+  p4.addEventListener("click", (event) => {
+    window.location.href = "./new.html";
+  });
 
   let p5 = document.createElement("p");
   p5.innerText = "TV Boxes & Mini PCs";
+  p5.style.cursor = "pointer";
+  p5.addEventListener("click", (event) => {
+    window.location.href = "./new.html";
+  });
 
   let p6 = document.createElement("p");
   p6.innerText = "Computers, Tablets & Accessories";
+  p6.style.cursor = "pointer";
+  p6.addEventListener("click", (event) => {
+    window.location.href = "./new.html";
+  });
 
   let p7 = document.createElement("p");
   p7.innerText = "Toys & Hobbles";
+  p7.style.cursor = "pointer";
+  p7.addEventListener("click", (event) => {
+    window.location.href = "./new.html";
+  });
 
   let p8 = document.createElement("p");
   p8.innerText = "Phones & Accessories";
+  p8.style.cursor = "pointer";
+  p8.addEventListener("click", (event) => {
+    window.location.href = "./new.html";
+  });
 
   let p9 = document.createElement("p");
   p9.innerText = "Automobiles & Motorcycles";
+  p9.style.cursor = "pointer";
+  p9.addEventListener("click", (event) => {
+    window.location.href = "./new.html";
+  });
 
   let p10 = document.createElement("p");
   p10.innerText = "Wearable Devices";
+  p10.style.cursor = "pointer";
+  p10.addEventListener("click", (event) => {
+    window.location.href = "./new.html";
+  });
 
   let p11 = document.createElement("p");
   p11.innerText = "Security Systems";
+  p11.style.cursor = "pointer";
+  p11.addEventListener("click", (event) => {
+    window.location.href = "./new.html";
+  });
 
   let p12 = document.createElement("p");
   p12.innerText = "Fashion";
+  p12.style.cursor = "pointer";
+  p12.addEventListener("click", (event) => {
+    window.location.href = "./new.html";
+  });
+
   subdiv.append(p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12);
   newDivSecond.append(subdiv);
   navbarCategories.appendChild(newDivSecond);
@@ -363,6 +461,19 @@ navbarCategories.addEventListener("click", (event) => {
     }
   });
 });
+////////////////////////////////////////////////////////navbar all links
+
+let navbarCart = document.querySelector("#navbarCart");
+navbarCart.addEventListener("click", (event) => {
+  window.location.href = "./cart.html";
+});
+
+let navbarSignIn = document.querySelector("#navbarSignIn");
+navbarSignIn.addEventListener("click", (event) => {
+  window.location.href = "./signup.html";
+});
+
+/////////////////////////////footer//////////////////////////////////
 
 let footerDiv = document.querySelector("#footer");
 footerDiv.innerHTML = footer();
