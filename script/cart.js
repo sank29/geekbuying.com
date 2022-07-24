@@ -473,6 +473,30 @@ navbarSignIn.addEventListener("click", (event) => {
   window.location.href = "./signup.html";
 });
 
+let mainLogo = document.querySelector("#mainLogo");
+mainLogo.style.cursor = "pointer";
+mainLogo.addEventListener("click", (event) => {
+  window.location.href = "./index.html";
+});
+
+let arivalPageLink = document.querySelector("#arivalPageLink");
+arivalPageLink.style.cursor = "pointer";
+arivalPageLink.addEventListener("click", (event) => {
+  window.location.href = "./new.html";
+});
+
+let bestSellingPageLink = document.querySelector("#bestSellingPageLink");
+bestSellingPageLink.style.cursor = "pointer";
+bestSellingPageLink.addEventListener("click", (event) => {
+  window.location.href = "./bestSell.html";
+});
+
+let barndPageLink = document.querySelector("#barndPageLink");
+barndPageLink.style.cursor = "pointer";
+barndPageLink.addEventListener("click", (event) => {
+  window.location.href = "./brand.html";
+});
+
 /////////////////////////////footer//////////////////////////////////
 
 let footerDiv = document.querySelector("#footer");
