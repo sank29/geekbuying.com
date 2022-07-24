@@ -71,8 +71,8 @@ import {
   b_data,
   c_data,
   d_data,
-  e_data,
   other_data,
+  e_data,
 } from "./export.js";
 
 let result = document.getElementById("sorting_result");
