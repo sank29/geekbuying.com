@@ -63,6 +63,9 @@ We have also added the checkout and payment page. you can also see the items you
 - Netlify
 - Github
 
+## Clone Snaps :-
+
+
 ## Site Made by Us
 https://iridescent-empanada-4f8c87.netlify.app
 
