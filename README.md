@@ -1,4 +1,3 @@
-# Team tropical-drawer-5456
 <h1 align="center">Geekbuying_Ecommerce_Clone</h1>
 
 ## Description
